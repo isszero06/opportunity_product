@@ -1,6 +1,6 @@
 # -*- encoding: utf-8 -*-
 {
-	"name": "Opportunity Product Without Dimensions",
+	"name": "Opportunity Product",
 	"version": "0.4.0",
         "author": 'Zero Systems',
         "company": 'Zero for Information Systems',
@@ -11,10 +11,10 @@
 		'base','sale_crm','sale','product'
 	],
 	"category": "crm",
-        'summary': """ Add Products with  Dimensions to CRM opportunity """,
+        'summary': """ Add Products to CRM opportunity """,
 	"description": """
-	This module allow to add normal products and products with dimensions (Width , Height)on opportunity and create quote with that
-	to help sales department in engineering , contracting and constractions projects. 
+	This module allow to add normal products on opportunity and create muti quote 
+	to help sales department . 
 	""",
 	"data": [
 		'security/ir.model.access.csv',
