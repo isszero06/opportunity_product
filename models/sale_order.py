@@ -13,7 +13,7 @@ class SaleOrder(models.Model):
                     'product_id':record.product_id.id,
                     'product_id':record.product_id.id,
                     'name':record.description,
-                    #'price_unit':record.product_id.lst_price,
+                    'price_unit':product_id.lst_price,
                     'cust_desc':record.cust_desc,
                     'product_uom_id':record.product_uom.id,
                     #'height' :record.height,
