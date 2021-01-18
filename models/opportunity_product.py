@@ -17,7 +17,7 @@ class CrmLeadProduct(models.Model):
     cust_desc = fields.Char('Cust.Desc')
     product_id = fields.Many2one('product.product',string='Items')
     description = fields.Text(string='Description')
-    price_unit = fields.Float(string='Standard Unit Price')
+    price_unit = fields.Float(string='Standard Unit Price', readonly=True)
     #tax_id = fields.Many2many('account.tax', string='Taxes')
     #is_dimension = fields.Boolean('Use Dimensions..?',related="product_id.is_dimension")
     #height = fields.Float('Height (cm)')
@@ -86,7 +86,7 @@ class CrmLead(models.Model):
             order_lines.append((0,0,{'product_id': line.product_id.id,
                 'name': line.description,
                 'product_uom_qty':line.product_uom_qty,
-                'price_unit': line.price_unit,
+                #'price_unit': line.price_unit,
                  'item_partner_sub_no': line.item_partner_sub_no,
                  'cust_desc': line.cust_desc,
                  #'height' : line.height,
