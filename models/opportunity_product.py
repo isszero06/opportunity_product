@@ -12,12 +12,12 @@ class DimensionSaleOrderLine(models.Model):
 class CrmLeadProduct(models.Model):
     _name = 'crm.lead.product'
 
-    item_partner_no = fields.Char('partner Item NO')
-    item_partner_sub_no = fields.Char('SN')
-    cust_desc = fields.Char('Cust.Desc')
-    product_id = fields.Many2one('product.product',string='Items')
-    description = fields.Text(string='Description')
-    price_unit = fields.Float(string='Standard Unit Price', readonly=True)
+    item_partner_no = fields.Char('partner Item NO', copy=True)
+    item_partner_sub_no = fields.Char('SN', copy=True)
+    cust_desc = fields.Char('Cust.Desc', copy=True)
+    product_id = fields.Many2one('product.product',string='Items', copy=True)
+    description = fields.Text(string='Description', copy=True)
+    price_unit = fields.Float(string='Standard Unit Price', readonly=True ,store=True, copy=True)
     #tax_id = fields.Many2many('account.tax', string='Taxes')
     #is_dimension = fields.Boolean('Use Dimensions..?',related="product_id.is_dimension")
     #height = fields.Float('Height (cm)')
@@ -28,10 +28,10 @@ class CrmLeadProduct(models.Model):
     #height1 = fields.Float('Actual Height (cm)')
     #width1 = fields.Float('Actual Width (cm)')
     #di_batch = fields.Char('Dimension Batch', readonly=True)
-    product_uom_qty = fields.Float('Ordered Qty')
+    product_uom_qty = fields.Float('Ordered Qty', copy=True)
     product_uom_id = fields.Many2one('uom.uom', related='product_id.uom_id', readonly=True)
     lead_id = fields.Many2one('crm.lead')
-    line_subtotal = fields.Float('SubTotal', compute='_calculate_line_subtotal')
+    line_subtotal = fields.Float('SubTotal', compute='_calculate_line_subtotal',store=True)
 
     
     @api.onchange('product_id')
