@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<record id="crm_case_form_view_oppor_inherit_product" model="ir.ui.view">
+		<field name="name">crm.lead.oppor.inherited</field>
+		<field name="model">crm.lead</field>
+		<field name="inherit_id" ref="crm.crm_lead_view_form" />
+		<field name="arch" type="xml">
+			<xpath expr="//page[@name='lead']" position="after">
+				<page string="Item pricing scheme">
+					<field name="lead_product_ids">
+						<tree editable="bottom">
+							<field name="product_id" domain="[('sale_ok', '=', True)]"/>
+							<field name="description" invisible="1" />
+							<!--field name="tax_id" widget="many2many_tags"/>-->
+							<field name="item_partner_sub_no"/>
+							<!--field name="is_dimension" invisible="1"/>-->
+							<field name="cust_desc"/>
+							<!--field name="is_dimension" invisible="1"/>
+							<field name="width" attrs="{'readonly': [('is_dimension', '=', False)],'required': [('is_dimension', '=', True)]}"/>
+							<field name="height" attrs="{'readonly': [('is_dimension', '=', False)],'required': [('is_dimension', '=', True)]}"/>
+							<field name="pcs1" attrs="{'readonly': [('is_dimension', '=', False)],'required': [('is_dimension', '=', True)]}"/>
+							<field name="di_batch" readonly="1" force_save="1" invisible="1"/>-->
+							<field name="product_uom_id"/>
+							<!--field name="m2" readonly="1" force_save="1" invisible="1"/>
+							<field name="total_m2" readonly="1" force_save="1" invisible="1"/>-->
+							<!--field name="product_uom_qty" force_save="1" attrs="{'readonly': [('is_dimension', '!=', False)]}"/>-->
+							<field name="product_uom_qty" force_save="1"/>
+							<field name="price_unit"/>
+							<field name="line_subtotal"/>
+						</tree>
+					</field>
+					<div>
+						<group class="oe_subtotal_footer oe_right" colspan="2" name="lead_total" modifiers="{}">
+							<field name="lead_total" widget="monetary" options="{'currency_field': 'currency_id'}" modifiers="{'readonly':true}"/>
+
+						</group>
+					</div>
+
+				</page>
+			</xpath>
+			<xpath expr="//field[@name='planned_revenue']" position="attributes">
+						<attribute name="readonly">1</attribute>
+			</xpath>
+			<xpath expr="//field[@name='probability']" position="attributes">
+						<attribute name="readonly">1</attribute>
+			</xpath>
+
+		</field>
+	</record>
+	<record id="inherit_crm_case_form_view_oppor_opportunity_product" model="ir.ui.view">
+		<field name="name">crm.lead.oppor.inherited</field>
+		<field name="model">crm.lead</field>
+		<field name="inherit_id" ref="sale_crm.crm_case_form_view_oppor" />
+		<field name="arch" type="xml">
+			<xpath expr="//button[@name='action_sale_quotations_new']" position="replace">
+				<button string="Convert to Quotation" name="action_create_quotation" type="object" class="oe_highlight"/>
+			</xpath>
+		</field>
+	</record>
+
+	<record id="product_opportunity_sale_order_form_inherit" model="ir.ui.view">
+            <field name="name">product.opportunity.sale.order</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.view_order_form"/>
+            <field name="arch" type="xml">
+				<xpath expr="//sheet/notebook/page[@name='order_lines']/field[@name='order_line']/tree/field[@name='product_template_id']" position="after">
+							<!--field name="item_partner_no " optional="hide"/>-->
+							<field name="item_partner_sub_no" optional="hide"/>
+							<field name="cust_desc" optional="hide"/>
+				</xpath>
+	    </field>	
+	</record>
+
+
+
+</odoo>

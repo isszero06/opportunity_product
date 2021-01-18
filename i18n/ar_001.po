@@ -1,0 +1,241 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* opportunity_product
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e-20200921\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-11-17 08:21+0000\n"
+"PO-Revision-Date: 2020-11-17 08:21+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: opportunity_product
+#: model_terms:ir.ui.view,arch_db:opportunity_product.report_crmlead_document
+msgid "<span>Initial Standard Qutation for# </span>"
+msgstr "عرض اسعار قياسي مبدئي"
+
+#. module: opportunity_product
+#: model_terms:ir.ui.view,arch_db:opportunity_product.report_crmlead_document
+msgid "<strong>Sales Person:</strong>"
+msgstr "مسئول المبيعات"
+
+#. module: opportunity_product
+#: model_terms:ir.ui.view,arch_db:opportunity_product.report_crmlead_document
+msgid "<strong>Total:</strong>"
+msgstr "الاجمالي"
+
+#. module: opportunity_product
+#: model:ir.model.fields,field_description:opportunity_product.field_crm_lead_product__height1
+msgid "Actual Height (cm)"
+msgstr "الارتفاع"
+
+#. module: opportunity_product
+#: model:ir.model.fields,field_description:opportunity_product.field_crm_lead_product__width1
+msgid "Actual Width (cm)"
+msgstr "العرض"
+
+#. module: opportunity_product
+#: model_terms:ir.ui.view,arch_db:opportunity_product.inherit_crm_case_form_view_oppor_opportunity_product
+msgid "Convert to Quotation"
+msgstr "التحويل الى عرض سعر"
+
+#. module: opportunity_product
+#: model:ir.model.fields,field_description:opportunity_product.field_crm_lead_product__create_uid
+msgid "Created by"
+msgstr "انشئ بواسطة"
+
+#. module: opportunity_product
+#: model:ir.model.fields,field_description:opportunity_product.field_crm_lead_product__create_date
+msgid "Created on"
+msgstr "انشئ في"
+
+#. module: opportunity_product
+#: model:ir.model.fields,field_description:opportunity_product.field_crm_lead_product__cust_desc
+msgid "Cust.Desc"
+msgstr "وصف العميل"
+
+#. module: opportunity_product
+#: model:ir.model.fields,help:opportunity_product.field_crm_lead_product__product_uom_id
+msgid "Default unit of measure used for all stock operations."
+msgstr "الوحدة التلقائية لحركات المخازن"
+
+#. module: opportunity_product
+#: model:ir.model.fields,field_description:opportunity_product.field_crm_lead_product__description
+#: model_terms:ir.ui.view,arch_db:opportunity_product.report_crmlead_document
+msgid "Description"
+msgstr "وصف الصنف"
+
+#. module: opportunity_product
+#: model:ir.model.fields,field_description:opportunity_product.field_crm_lead_product__di_batch
+msgid "Dimension Batch"
+msgstr "باتش الابعاد"
+
+#. module: opportunity_product
+#: model:ir.model.fields,field_description:opportunity_product.field_crm_lead_product__display_name
+msgid "Display Name"
+msgstr "اسم الصنف"
+
+#. module: opportunity_product
+#: model_terms:ir.ui.view,arch_db:opportunity_product.report_crmlead_document
+msgid "Height"
+msgstr "الارتفاع"
+
+#. module: opportunity_product
+#: model:ir.model.fields,field_description:opportunity_product.field_crm_lead_product__height
+msgid "Height (cm)"
+msgstr "الارتفاع (سم)"
+
+#. module: opportunity_product
+#: model:ir.model.fields,field_description:opportunity_product.field_crm_lead_product__id
+msgid "ID"
+msgstr ""
+
+#. module: opportunity_product
+#: model:ir.actions.report,name:opportunity_product.action_report_crm_lead
+msgid "Initial Standared Qutation"
+msgstr "عرض اسعار مبدئي"
+
+#. module: opportunity_product
+#: model_terms:ir.ui.view,arch_db:opportunity_product.crm_case_form_view_oppor_inherit_product
+msgid "Item pricing scheme"
+msgstr "تسعير الاصناف"
+
+#. module: opportunity_product
+#: model:ir.model.fields,field_description:opportunity_product.field_crm_lead_product__product_id
+msgid "Items"
+msgstr "الاصناف"
+
+#. module: opportunity_product
+#: model:ir.model.fields,field_description:opportunity_product.field_crm_lead_product____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: opportunity_product
+#: model:ir.model.fields,field_description:opportunity_product.field_crm_lead_product__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: opportunity_product
+#: model:ir.model.fields,field_description:opportunity_product.field_crm_lead_product__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: opportunity_product
+#: model:ir.model.fields,field_description:opportunity_product.field_crm_lead_product__lead_id
+msgid "Lead"
+msgstr "العميل المحتمل"
+
+#. module: opportunity_product
+#: model:ir.model,name:opportunity_product.model_crm_lead
+msgid "Lead/Opportunity"
+msgstr "ترشيح/فرصة"
+
+#. module: opportunity_product
+#: model:ir.model.fields,field_description:opportunity_product.field_crm_lead_product__product_uom_qty
+msgid "Ordered Qty"
+msgstr "كمية الامر"
+
+#. module: opportunity_product
+#: model:ir.model.fields,field_description:opportunity_product.field_crm_lead_product__pcs1
+#: model_terms:ir.ui.view,arch_db:opportunity_product.report_crmlead_document
+msgid "PCs"
+msgstr "العدد"
+
+#. module: opportunity_product
+#: model_terms:ir.ui.view,arch_db:opportunity_product.report_crmlead_document
+msgid "Product"
+msgstr "الصنف"
+
+#. module: opportunity_product
+#: model:ir.model.fields,field_description:opportunity_product.field_crm_lead__lead_product_ids
+#: model:ir.model.fields,field_description:opportunity_product.field_sale_order__opportunity_id
+msgid "Products For Quotation"
+msgstr "الاصناف لعمل عرض سعر"
+
+#. module: opportunity_product
+#: model_terms:ir.ui.view,arch_db:opportunity_product.report_crmlead_document
+msgid "Qty"
+msgstr "الكمية"
+
+#. module: opportunity_product
+#: model:ir.model.fields,field_description:opportunity_product.field_crm_lead_product__item_partner_sub_no
+#: model_terms:ir.ui.view,arch_db:opportunity_product.report_crmlead_document
+msgid "SN"
+msgstr "رقم البند"
+
+#. module: opportunity_product
+#: model:ir.model,name:opportunity_product.model_sale_order
+msgid "Sales Order"
+msgstr "أمر البيع"
+
+#. module: opportunity_product
+#: model:ir.model.fields,field_description:opportunity_product.field_crm_lead_product__price_unit
+msgid "Standard Unit Price"
+msgstr "سعر الوحدة"
+
+#. module: opportunity_product
+#: model:ir.model.fields,field_description:opportunity_product.field_crm_lead_product__line_subtotal
+#: model_terms:ir.ui.view,arch_db:opportunity_product.report_crmlead_document
+msgid "SubTotal"
+msgstr "السعر الكلي"
+
+#. module: opportunity_product
+#: model:ir.model.fields,field_description:opportunity_product.field_crm_lead__lead_total
+msgid "Total"
+msgstr "الاجمالي"
+
+#. module: opportunity_product
+#: model:ir.model.fields,field_description:opportunity_product.field_crm_lead_product__total_m2
+msgid "Total(m2)"
+msgstr " (م2)اجمالي "
+
+#. module: opportunity_product
+#: model_terms:ir.ui.view,arch_db:opportunity_product.report_crmlead_document
+msgid "UOM"
+msgstr "الوحدة"
+
+#. module: opportunity_product
+#: model_terms:ir.ui.view,arch_db:opportunity_product.report_crmlead_document
+msgid "Unit Price"
+msgstr "سعر الوحدة"
+
+#. module: opportunity_product
+#: model:ir.model.fields,field_description:opportunity_product.field_crm_lead_product__product_uom_id
+msgid "Unit of Measure"
+msgstr "الوحدة"
+
+#. module: opportunity_product
+#: model:ir.model.fields,field_description:opportunity_product.field_crm_lead_product__is_dimension
+msgid "Use Dimensions..?"
+msgstr ""
+
+#. module: opportunity_product
+#: model_terms:ir.ui.view,arch_db:opportunity_product.report_crmlead_document
+msgid "Width"
+msgstr "العرض"
+
+#. module: opportunity_product
+#: model:ir.model.fields,field_description:opportunity_product.field_crm_lead_product__width
+msgid "Width (cm)"
+msgstr "العرض(سم)"
+
+#. module: opportunity_product
+#: model:ir.model,name:opportunity_product.model_crm_lead_product
+msgid "crm.lead.product"
+msgstr ""
+
+#. module: opportunity_product
+#: model:ir.model.fields,field_description:opportunity_product.field_crm_lead_product__m2
+msgid "m2/PC"
+msgstr "م2 للوحدة"
+
+#. module: opportunity_product
+#: model:ir.model.fields,field_description:opportunity_product.field_crm_lead_product__item_partner_no
+msgid "partner Item NO"
+msgstr "كود البند الرئيسي"
