@@ -17,7 +17,7 @@ class CrmLeadProduct(models.Model):
     cust_desc = fields.Char('Cust.Desc', copy=True)
     product_id = fields.Many2one('product.product',string='Items', copy=True)
     description = fields.Text(string='Description', copy=True)
-    price_unit = fields.Float(string='Standard Unit Price', readonly=True ,store=True, copy=True)
+    price_unit = fields.Float(string='Standard Unit Price', related='product_id.lst_price' readonly=True ,store=True, copy=True)
     #tax_id = fields.Many2many('account.tax', string='Taxes')
     #is_dimension = fields.Boolean('Use Dimensions..?',related="product_id.is_dimension")
     #height = fields.Float('Height (cm)')
@@ -38,7 +38,7 @@ class CrmLeadProduct(models.Model):
     def onchange_product_id(self):
         if self.product_id:
             self.description = self.product_id.name
-            self.price_unit = self.product_id.lst_price
+            #self.price_unit = self.product_id.lst_price
             self.product_uom_id = self.product_id.uom_id.id
             #self.tax_id = self.product_id.taxes_id.ids
     
